@@ -88,7 +88,9 @@ app.get('*', (req, res) => {
     })
 })
 
+const port = process.env.port || 3000
+
 // Informa a porta que o servidor vai ouvir, no caso a padrão é 3000 e a função que será executada ao final
-app.listen('3000', () => {
-    console.log('Server is up')
+app.listen(port, () => {
+    console.log(`Server up on port ${port}`)
 })
