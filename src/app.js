@@ -84,11 +84,11 @@ app.get('*', (req, res) => {
     //res.send('404')
     res.render('404', {
         title: '404',
-        errorMesage: 'Página não encontrada'
+        errorMesage: 'Página não encontrada.'
     })
 })
 
-const port = process.env.port || 3000
+const port = process.env.PORT || 3000
 
 // Informa a porta que o servidor vai ouvir, no caso a padrão é 3000 e a função que será executada ao final
 app.listen(port, () => {
